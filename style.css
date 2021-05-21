@@ -1,0 +1,132 @@
+:root {
+    --main-c : #2AF598;
+    --white : white;
+    --blue : #009EFD;
+}
+* {
+    font-family: 'Inter', sans-serif;
+}
+.c-blue {
+    color: var(--blue);
+}
+.c-white {
+    color: var(--white);
+}
+.bg-white {
+    background-color: var(--white);
+}
+.c-green {
+    color: var(--main-c);
+}
+.bg-green {
+    background-color: var(--main-c);
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    z-index: 9999;
+}
+.navbar-custom{
+    padding: 5px;
+    
+}
+.ls {
+    letter-spacing: 2px;
+}
+.start-button {
+    letter-spacing: 2px;
+    color: var(--main-c);
+    background-color: #FFF6E0;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.start-button:hover {
+    color: var(--white);
+    background-color: #FFF6E0;
+}
+header {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+}
+.bl {
+    position: absolute;
+    top: 53%;
+    left: -6%;
+}
+.tr {
+    position: absolute;
+    top: -10%;
+    right: 0px;
+}
+.resp {
+    display: none;
+}
+@media only screen and (max-height: 800px){
+    .tr {
+        position: absolute;
+        top: -20%;
+        right: 0px;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .bl {
+        position: absolute;
+        top: 65%;
+        left: -15%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .resp {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+    .not-resp {
+        display: none;
+    }
+    .tr {
+        position: absolute;
+        top: -8%;
+        right: 0px;
+        width: 400px;
+    }
+    .bl {
+        position: absolute;
+        top: 55%;
+        left: -15%;
+    }
+}
+@media only screen and (max-width: 610px){
+    .tr {
+        position: absolute;
+        top: -5%;
+        right: 0px;
+        width: 200px;
+    }
+    .bl {
+        position: absolute;
+        top: 65%;
+        left: -15%;
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 374px){
+    .tr {
+        position: absolute;
+        top: -5%;
+        right: 0px;
+        width: 190px;
+    }
+    .bl {
+        position: absolute;
+        top: 60%;
+        left: -25%;
+        width: 300px;
+    }
+}
