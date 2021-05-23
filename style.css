@@ -22,6 +22,7 @@
     background-color: var(--main-c);
 }
 .navbar {
+    width: 100%;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +30,8 @@
     justify-content: space-between;
     padding: 0px;
     z-index: 9999;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.705);
 }
 .navbar-custom{
     padding: 5px;
@@ -67,6 +70,30 @@ header {
 .resp {
     display: none;
 }
+.sdp {
+    right: 5%;
+    bottom: 5%;
+    position: absolute;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 1s all ease-in-out;
+}
+.sdp:hover {
+    background-color: var(--main-c);
+    color: var(--blue);
+}
+
+.nav-active {
+    background-color: transparent;
+}
+
+
+
 @media only screen and (max-height: 800px){
     .tr {
         position: absolute;
@@ -79,6 +106,12 @@ header {
         position: absolute;
         top: 65%;
         left: -15%;
+    }
+    .tr {
+        position: absolute;
+        top: -8%;
+        right: 0px;
+        width: 400px;
     }
 }
 @media only screen and (max-width: 800px){
